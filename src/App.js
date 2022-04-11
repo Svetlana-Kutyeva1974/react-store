@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import ShopItem from './ShopItem.js';
+import ShopItemFunc from './ShopItem.js';
 
 const item = {
   brand: 'Tiger of Sweden',
@@ -13,6 +13,21 @@ const item = {
 
 function App() {
   return (
+    <div className="container">
+    <div className="background-element">
+    </div>
+    <div className="highlight-window">
+      <div className='highlight-overlay'></div>
+    </div>
+    <div className="window">
+      <ShopItemFunc item={item} />
+    </div>
+  </div>
+  );
+}
+
+export default App;
+ /*
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -29,7 +44,5 @@ function App() {
         </a>
       </header>
     </div>
-  );
-}
-
-export default App;
+    */
+   
